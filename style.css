@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5,#f8e8ff);
+    overflow-x:hidden;
+    color:#444;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    color:#ff5d9e;
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+    color:#ff3f87;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    font-size:1.1rem;
+    margin-bottom:35px;
+}
+
+button{
+    background:#ff5d9e;
+    color:white;
+    border:none;
+    padding:16px 40px;
+    border-radius:50px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(255,93,158,.3);
+}
+
+button:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+.hidden{
+    display:none;
+}
+
+#birthday{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#birthday h1{
+    font-family:'Great Vibes',cursive;
+    color:#ff3f87;
+    font-size:4rem;
+}
+
+#birthday h2{
+    color:#ff5d9e;
+    margin:20px 0;
+}
+
+.letter{
+    margin:50px auto;
+    max-width:750px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    line-height:1.9;
+}
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.heart{
+    position:absolute;
+    bottom:-30px;
+    font-size:20px;
+    animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+#birthday h1{
+    font-size:3rem;
+}
+
+.letter{
+    padding:25px;
+}
+
+}
